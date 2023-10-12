@@ -1,0 +1,82 @@
+
+body {
+    height: 100vh;
+    font-family: montserrat, monospace;
+    overflow: hidden;
+}
+
+.bg {
+    background-image: url(/img/index.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#name, p {
+    padding: 11px;
+}
+
+#slogan_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login_button {
+    border: 1px solid black;
+    padding: 2.5%;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 50px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #edf2f4;
+}
+
+.content {
+    background: linear-gradient(0deg, rgba(46, 38, 38, 0.2), rgba(46, 38, 38, 0.2)), rgba(111, 180, 219, 0.5);
+    border-radius: 27px;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 7%;
+    padding-bottom: 21px;
+}
+
+@media (max-width: 992px) {
+    .bg {
+        background-image: url(/img/indexMobile.png);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .content {
+        background: linear-gradient(0deg, rgba(46, 38, 38, 0.2), rgba(46, 38, 38, 0.2)), rgba(255, 214, 10, 0.5);
+        border-radius: 27px;
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-top: 7%;
+        padding-bottom: 21px;
+    }
+}

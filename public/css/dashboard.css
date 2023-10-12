@@ -1,0 +1,157 @@
+body{
+    font-family: montserrat, monospace;
+    height: 100vh;  
+    background: #F4F1DE;
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.bg {
+    background-image: url(/img/dashboardMobile.png);
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    padding: 20px;
+}
+
+h1 img{
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+}
+
+h1:hover img{
+    visibility: visible;
+}
+
+
+h2{
+    padding: 30px;
+    color:black; 
+    margin-bottom: 50px;
+    letter-spacing: 0.15rem;
+}
+
+h2::selection{
+    text-shadow: -4px 4px #ef3550,
+               -8px 8px #f48fb1,
+               -12px 12px #6600cc,
+               -16px 16px #2196f3,
+               -20px 20px #66ccff,
+               -24px 24px #43a047,
+               -28px 28px #eeff41,
+               -32px 32px #f9a825,
+               -36px 36px #ff5722; 
+}
+
+#games {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#games img{
+    width: 350px;
+    height: 275px;
+}
+
+.game1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #E07A5F;
+    transition: 0.3s;
+    width: 375px;
+    padding-top: 15px;
+    margin: auto;
+}
+  
+.game1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.game2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #E07A5F;
+    transition: 0.3s;
+    width: 375px;
+    padding-top: 15px;
+    margin: auto;;
+}
+  
+.game2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.game3 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #E07A5F;
+    transition: 0.3s;
+    width: 375px;
+    padding-top: 15px;
+    margin: auto;
+}
+  
+.game3:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    margin-bottom: 25px;
+}
+  
+.game_link {
+    text-decoration: none;
+    color: black;
+}
+
+.game_link:hover {
+    color: yellow;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+.button {
+    padding-right: 0px;
+    padding-left: 0px; 
+    background: none; 
+    border: none;
+    color: rgba(0,0,0,.55);
+    margin: 2px;
+}
+
+.button:hover {
+    color: black;
+    transition: color .15s ease-in-out,black .15s ease-in-out,black .15s ease-in-out;
+}
+
+form {
+    height: 40px;
+}
+
+@media (min-width: 992px) {
+
+    .button {
+        margin: 0px;
+        padding: 8px; 
+        background: none; 
+        border: none;
+    }
+
+    .bg {
+        background-image: url(/img/dashboard.png);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}  

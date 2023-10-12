@@ -1,0 +1,72 @@
+body{
+    font-family: montserrat, monospace;
+    background: #F4F1DE;
+    height: 100vh;  
+    text-align: center;
+    overflow: hidden;
+}
+
+.score{
+    font-size: 30px;
+}
+.score>label{
+    padding: 35px;
+    font-size: 50px;
+    color:rgb(243, 96, 96)
+}
+
+.button>button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #555555;
+    color: white;
+}
+
+.button>button{
+    margin: 22px;
+    padding: 8px 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+.button {
+    padding-right: 0px;
+    padding-left: 0px; 
+    background: none; 
+    border: none;
+    color: rgba(0,0,0,.55);
+    margin: 2px;
+}
+
+.button:hover {
+    color: black;
+    transition: color .15s ease-in-out,black .15s ease-in-out,black .15s ease-in-out;
+}
+
+form {
+    height: 40px;
+}
+
+@media (min-width: 992px) {
+
+    .button {
+        margin: 0px;
+        padding: 8px; 
+        background: none; 
+        border: none;
+    }
+
+}  

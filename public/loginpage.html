@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigBrain Loginpage</title>
+    <link href="/img/BigBrain_logo.png" rel="icon" type="image/x-icon" />
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/Loginpage.css">
+    <!--------->
+</head>
+
+<body>
+    <div class = "content">
+        <div id="logo_icon">
+            <img src="/img/BigBrain_logo.png" >
+        </div>
+
+        <h1>Welcome to BigBrain!</h1>
+
+
+        <form action="/login" method="POST">
+            <div class="txt_field1">
+                <label>Username</label> 
+                <input type="text" autocomplete="off" id="username" name="username" placeholder="Username" /> 
+            </div>
+
+            <div class="txt_field2">
+                <label>Password</label>
+                <input type="password" autocomplete="off" id="password" name="password" placeholder="Password" />
+            </div>
+
+            <p id="errMsg">&nbsp;</p>
+
+            <div class="login_button">
+                <input type="submit" value ="Login" />
+            </div>
+
+            
+            <div class="signup">
+                <label id="signup_text">Need an account? </label>
+                <label id="signup_link"><a href="/register"> Sign up here!</a></label>     
+            </div>
+        </form>
+
+        <footer >
+            <p>&copy;BigBrain</p>
+        </footer>
+
+    </div>
+
+
+    <script src="/scripts/login_signup.js"></script>
+
+</body>
+
+
+
+
+</html>

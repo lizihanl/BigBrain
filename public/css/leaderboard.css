@@ -1,0 +1,111 @@
+/* For the header */
+.button {
+    padding-right: 0px;
+    padding-left: 0px; 
+    background: none; 
+    border: none;
+    color: rgba(0,0,0,.55);
+    margin: 2px;
+}
+
+.button:hover {
+    color: black;
+    transition: color .15s ease-in-out,black .15s ease-in-out,black .15s ease-in-out;
+}
+
+form {
+    height: 40px;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+@media (min-width: 992px) {
+    .button {
+        margin: 0px;
+        padding: 8px; 
+        background: none; 
+        border: none;
+    }
+}  
+
+/* For the page */
+
+body{
+    font-family: montserrat, monospace;
+    background: #F4F1DE;
+    height: 100vh;  
+    text-align: center;
+}
+
+.bg {
+    background-image: url(/img/dashboard.png);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+h3 {
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px;
+}
+
+.info p {
+    font-size: larger;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.leaderboard {
+    padding: 7px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leaderboard p {
+    margin-bottom: 0%;
+}
+
+th {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+.allTable {
+    margin-top: 21px;
+    background: linear-gradient(0deg, rgba(46, 38, 38, 0.25), rgba(46, 38, 38, 0.25)), rgba(244, 241, 222, 0.75);
+    border-radius: 27px;
+}
+
+.userTable {
+    background: linear-gradient(0deg, rgba(46, 38, 38, 0.25), rgba(46, 38, 38, 0.25)), rgba(224, 122, 95, 0.75);
+    border-radius: 27px;
+}
+
+@media (max-width: 700px) {
+    .bg {
+        background-image: url(/img/dashboardMobile.png);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}  

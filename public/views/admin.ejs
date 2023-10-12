@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>BigBrain | Admin</title>
+    <link href="/img/BigBrain_logo.png" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/admin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/string-strip-html/dist/string-strip-html.umd.js"></script>
+</head>
+
+<body>
+<div class="bg">
+    <div id="logo_icon">
+        <img src="/img/BigBrain_logo.png">
+    </div>
+
+    <h1>Welcome to Admin Dashboard!</h1>
+    <div class="content">
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Username</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>User Type</th>
+                    <th></th>
+                </tr>
+                <% var i = 1 %>
+                <% for (const user of users) {%>
+                <% let name = user.username %>
+                <% let fname = user.firstname %>
+                <% let lname = user.lastname %>
+                <% let usertype = user.userType %>
+                <tr id="<%= i %>">
+                    <form action="/do-delete" method="POST" enctype="multipart/form-data">
+                        <td>
+                            <div class="form-group2">
+                                <input type="text" class="username" name="username" value=<%= name %>>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group2">
+                                <input type="text" class="firstname" name="firstname" value=<%= fname %>>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group2">
+                                <input type="text" class="lastname" name="lastname" value=<%= lname %>>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group2">
+                                <input type="text" class="usertype" name="usertype" value=<%= usertype %>>
+                            </div>
+                        </td>
+                        <td>
+                            <button type="button" id="<%= user._id %>')">
+                                Delete
+                            </button>
+                        </td>
+                    </form>
+
+                </tr>
+
+                <% i++ %>
+                <% } %>
+            </table>
+        </div>
+    </div>
+    </br>
+    <form action="/logout?_method=DELETE" method="POST">
+        <button type="submit">Log out</button>
+    </form>
+
+    <footer>
+        <p>&copy;BigBrain</p>
+    </footer>
+    </div>
+</body>
+
+
+
+
+</html>

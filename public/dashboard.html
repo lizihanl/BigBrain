@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>BigBrain</title>
+    <link href="/img/BigBrain_logo.png" rel="icon" type="image/x-icon" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- For the header and footer (used bootstrap) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!------------------------------------------------->
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="/css/main.css"> -->
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <!--------->
+
+</head>
+
+<body>
+
+    <nav id="navbar"></nav>
+
+    <div class="content">
+        <h1>Welcome to the dashboard, <span id="name"></span>!
+            <img id="smile" src="/img/smile.png" alt="smile">
+        </h1>
+
+        <h2>Start Your Game!</h2>
+
+        <div id="games">
+            <div id="g1">
+                <div class="game1">
+                    <a class="game_link" href="/mathInstruction.html">
+                        <img src="/img/mathGame.png" alt="pic2">
+                        <div class="container">
+                            <h5>Math Game</h5>
+                            <p>Click to Start!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="g2">
+                <div class="game2">
+                    <a class="game_link" href="/memoryInstruction.html">
+                        <img src="/img/memoryGame.png" alt="pic2">
+                        <div class="container">
+                            <h5>Memory Game</h5>
+                            <p>Click to Start!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="g3">
+                <div class="game3">
+                    <a class="game_link" href="#">
+                        <img src="/img/mathGame.png" alt="pic3">
+                        <div class="container">
+                            <h5>Geography Game</h5>
+                            <p>Click to Start!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+        
+
+        <footer >
+            <p>&copy;BigBrain</p>
+        </footer>
+    </div>
+
+    <script src="/scripts/skeleton.js"></script>
+</body>
+
+</html>

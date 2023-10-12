@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BigBrain | Post</title>
+  <link href="/img/BigBrain_logo.png" rel="icon" type="image/x-icon" />
+
+
+  <!-- For the header and footer (used bootstrap) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!------------------------------------------------->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/userProfile.css">
+  <!--------->
+
+  <!-- Tiny editor -->
+  <script src="https://cdn.tiny.cloud/1/bh142s7mepw35csdrujrvbabv49aywukp5ycijdhwz11ppph/tinymce/5/tinymce.min.js"
+    referrerpolicy="origin"></script>
+
+  <script>
+    tinymce.init({
+      selector: '#description',
+      plugins: [
+        'a11ychecker', 'advlist', 'advcode', 'advtable', 'autolink', 'checklist', 'export',
+        'lists', 'link', 'image', 'charmap', 'preview', 'anchor', 'searchreplace', 'visualblocks',
+        'powerpaste', 'fullscreen', 'formatpainter', 'insertdatetime', 'media', 'table', 'help', 'wordcount'
+      ],
+      toolbar: 'undo redo | formatpainter casechange blocks | bold italic backcolor | ' +
+        'alignleft aligncenter alignright alignjustify | ' +
+        'bullist numlist checklist outdent indent | removeformat | a11ycheck code table help'
+    });
+  </script>
+
+  <!--------->
+</head>
+
+<main>
+
+
+  <nav id="navbar"></nav>
+
+  <form id="/newPost" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" class="form-control" placeholder="Title" name="title" id="title" required>
+    </div>
+    <div class="form-group">
+      <label>description</label>
+      <textarea id="description" class="form-control" autocomplete="off" name="description"
+        placeholder="description"></textarea>
+    </div>
+    <div class="form-group">
+      <label>image</label>
+      <input type="file" class="form-control" autocomplete="off" id="image" name="image"
+        value="default-avatar.png"></input>
+    </div>
+
+    <div class="form-group">
+      <a href="/showTimeline" class="btn btn-warning">Cancel</a>
+      <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+  </form>
+
+
+
+
+  </div>
+
+
+  <script src="/scripts/skeleton.js"></script>
+
+
+
+
+
+
+  </body>
+
+
+
+
+</html>

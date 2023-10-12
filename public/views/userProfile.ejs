@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigBrain | User Profile</title>
+    <link href="/img/BigBrain_logo.png" rel="icon" type="image/x-icon" />
+
+
+    <!-- For the header and footer (used bootstrap) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!------------------------------------------------->
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/userProfile.css">
+    <!--------->
+
+    <!-- Tiny editor -->
+    <script src="https://cdn.tiny.cloud/1/bh142s7mepw35csdrujrvbabv49aywukp5ycijdhwz11ppph/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
+    <!--------->
+</head>
+
+<body>
+    <div class="bg">
+
+        <nav id="navbar"></nav>
+
+        <div class="content">
+            <% if(avatarImage){ %>
+                <img src="<%= avatarImage %>" class="rounded-circle" style="width: 40px; height: 40px;">
+            <% } %>
+
+            <h1><%= namef %>'s Profile </h1>
+
+            <div class="buttons" id="data-container">
+                <button type="button" onclick="location.href='/showTimeline'">Timeline</button>
+
+
+                <form action="/userProfile" method="POST" enctype="multipart/form-data">
+                    <div id="info" disabled>
+                        <div class="form-group">
+                            <label>Photo</label>
+                            <input type="file" id="avatarImage" name="avatarImage" placeholder="Your Photo">
+                        </div>
+                        <div class="form-group" id="field2">
+                            <label>Username</label>
+                            <input type="text" id="username" name="username" placeholder="Your Name" value=<%= user %>>
+                        </div>
+                        <div class="form-group" id="field2">
+                            <label>First Name</label>
+                            <input type="text" id="firstname" name="firstname" placeholder="Your first name"
+                                value=<%= namef %>>
+                        </div>
+                        <div class="form-group" id="field2">
+                            <label>Last Name</label>
+                            <input type="text" id="lastname" name="lastname" placeholder="Your last name"
+                                value=<%= namel %>>
+                        </div>
+                        <div class="form-group" id="field5">
+                            <label>Password</label>
+                            <input type="password" id="password" name="password" placeholder="Your Password">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="timeline">
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/scripts/skeleton.js"></script>
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>

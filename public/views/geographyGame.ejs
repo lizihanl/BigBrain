@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/img/BigBrain_logo.png" rel="icon" type="image/x-icon" />
+    <link href="/css/geographyGame.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>BigBrain | Geography Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <label id="left"></label>
+        </div>
+        <div class="score">
+            <p>Current Score: <label id="gamescore">0</label> </p>
+        </div>
+        <div id="question-container" class="hide">
+            <div id="flag">
+                <img src="" id="flags">
+            </div>
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+    </div>
+
+    <script src="/scripts/geographyGame.js"></script>
+</body>
+
+</html>

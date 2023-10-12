@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Signup</title>
+        <link rel="stylesheet" type="text/css" href="/css/signup.css">
+	</head>
+	<body>
+		<h1>Registration</h1>
+		<form action="/register" method="POST">
+			<div class="txt_field1">
+                <label>Username</label> 
+				<input type="text" autocomplete="off" id="username" name="username" placeholder="Username" required/>
+			</div>
+			<div class="txt_field2">
+                <label>First name</label> 
+				<input type="text" autocomplete="off" id="firstname" name="firstname" placeholder="First Name" required/>
+			</div>
+			<div class="txt_field3">
+                <label>Last name</label> 
+				<input type="text" autocomplete="off" id="lastname" name="lastname" placeholder="Last Name" required/>
+			</div>
+
+			<div class="txt_field4">
+                <label>Password</label> 
+				<input type="password" autocomplete="off" id="password" name="password" placeholder="Password" required/>
+			</div>
+
+			<div class="submit_button">
+				<button>Submit</button>
+			</div>
+
+			<div class="login_text">
+                <label>Already have an account? </label>
+            </div>
+
+			<div class="login_link">
+                <label><a href="/login"> Back to the login page here!</a></label>     
+            </div>
+
+		</form>
+
+	</body>
+</html>
+
+
+
+

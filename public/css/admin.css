@@ -1,0 +1,80 @@
+body{
+    background: lightblue;
+    font-family: montserrat, monospace;
+    height: 100vh;  
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.bg {
+    background-image: url(/img/index.png);
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo_icon img{
+    height: 150px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+}
+
+.content {
+    background: linear-gradient(0deg, rgba(46, 38, 38, 0.2), rgba(46, 38, 38, 0.2)), rgba(111, 180, 219, 0.5);
+    border-radius: 27px;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+body{
+    background-color: rgba(255, 214, 10, 0.859);
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.bg {
+    background-image: url(/img/indexMobile.png);
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    background: linear-gradient(0deg, rgba(46, 38, 38, 0.2), rgba(46, 38, 38, 0.2)), rgba(255, 214, 10, 0.5);
+    border-radius: 27px;
+    margin-left: 7%;
+    margin-right: 7%;
+    display: block;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#logo_icon img{
+    height: 150px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-radius: 50%;
+}
+
+}

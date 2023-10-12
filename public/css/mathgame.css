@@ -1,0 +1,53 @@
+body{
+    margin: 100px auto;
+    font-family: montserrat, monospace;
+    background: #457B9D;
+    height: 80vh;  
+    text-align: center;
+    overflow: hidden;
+}
+
+.score{
+    padding: 35px;
+    margin-right: 0;
+    font-size: 30px;
+}
+
+.numbers>p{
+    width: 40%;
+    text-align: center;
+    border: 2px solid black;
+    padding: 35px;
+    background: white;
+    opacity:0.6;
+    margin: auto;
+}
+
+table.numbers{
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.answer{
+    padding: 50px;
+}
+
+.button>button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #555555;
+    color: white;
+}
+
+.button>button{
+    margin: 22px;
+    padding: 8px 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+

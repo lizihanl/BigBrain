@@ -1,0 +1,43 @@
+{
+  "name": "2800-202210-bby30",
+  "version": "1.0.0",
+  "description": "* [Contributors](#contributors)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "ng build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usman-arshad1/2800-202210-BBY30.git"
+  },
+  "author": "Kevin Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/usman-arshad1/2800-202210-BBY30/issues"
+  },
+  "homepage": "https://github.com/usman-arshad1/2800-202210-BBY30#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "connect-mongo": "^4.6.0",
+    "dompurify": "^2.3.8",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.2",
+    "jsdom": "^19.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "mongodb": "^4.6.0",
+    "mongoose": "^6.3.2",
+    "mongoose-slug-generator": "^1.0.4",
+    "multer": "^1.4.4",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^7.0.0",
+    "string-strip-html": "^6.0.0"
+  },
+  "keywords": []
+}

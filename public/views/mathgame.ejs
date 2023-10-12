@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/img/BigBrain_logo.png" rel="icon" type="image/x-icon" />
+    <title>BigBrain | Math Game</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/mathgame.css">
+    <!--------->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://randojs.com/1.0.0.js"></script>
+
+</head>
+
+
+<body class="numbers" onload="generateRand();">
+
+
+
+    <div>
+        <label id="left"></label>
+    </div>
+
+    <div class="score">
+        <p>Current Score: <label id="gamescore">0</label> </p>
+    </div>
+
+    <div class="numbers">
+        <p> ( ) + <label id="number1"></label>
+            = <label id="number2"></label>
+            + <label id="number3"></label>
+        </p>
+
+    </div>
+    <div class="answer">
+        <input type="text" placeholder="Your answer" id="inputID" autocomplete="off" />
+    </div>
+
+    <div class="button">
+        <button onclick="submit(); getMathScore(score);">Submit</button>
+    </div>
+
+
+    <script src="/scripts/mathgame.js"></script>
+
+</body>
+
+</html>
